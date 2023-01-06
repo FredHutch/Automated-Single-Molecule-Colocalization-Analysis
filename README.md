@@ -19,7 +19,7 @@ https://www.openmicroscopy.org/bio-formats/downloads/
 **_ExampleRaw.tif_** is a cropped, shortened dataset derived from an original .nd2 image dataset that can be used for demo purposes.
 
 ```
-ISOR = tirfregister('ExampleRaw.tif',0);
+ISOR = tirfregister('ExampleRaw.tif',1);
 ```
 
 **_ExampleReg.ome.tiff_** is the drift-corrected version of *ExampleRaw.tif* that can be used for demo:
