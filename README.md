@@ -6,9 +6,9 @@ Automated-Single-Molecule-Colocalization-Analysis (ASMCA) repository contains th
 The aim of this pipeline is to identify binding events between DNA fragments immobilized on coverslips incubated with a cellular extract containing fluorescently tagged proteins and quantify their duration using time-lapse TIRF microscopy.
 In short,  the image dataset is drift-corrected using either fast Fourier Transform cross-correlations or translation affine transformation depending on the severity of the drift. DNA spots are identified after binarizing the DNA signal using global background value as threshold, followed by size and time-persistency filtering. Mean values of z-normalized fluorescent markers intensities are measured at each DNA spot at each time frame, and local background is subtracted. Z-normalized traces are then binarized to ON/OFF pulses by applying a channel-specific, manually adjusted threshold value unique to all traces in a given image set. Pulses onsets, durations and overlaps between channels are then derived. Pulses in ON state at the beginning or the end of the recording are flagged. See codes and manuscipt for detail. Input data is a three-channel time-series generated from a Nikon TIRF microscope with settings and specifications described in the manuscript. This pipeline has not been tested on other datasets coming from different platforms.
 
-**_tirfregister.m_** corrects the image dataset for the image drifting during timelapse acquisition.
+**_tirfregister.m_** corrects the image dataset for image drifting during timelapse acquisition.
 
-**_asmca.m_** analyzes the colocalization events occuring at the DNA fragments. For image dataset import, it relies on the bio-format package for MATLAB *bfmatlab* that can be freely downloaded at:
+**_asmca.m_** analyzes the colocalization events occuring at the DNA fragments. To import the image dataset, the code relies on the bio-format package for MATLAB *bfmatlab* that can be freely downloaded at:
 
 https://www.openmicroscopy.org/bio-formats/downloads/
 
