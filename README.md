@@ -22,7 +22,7 @@ https://www.openmicroscopy.org/bio-formats/downloads/
 ISOR = tirfregister('ExampleRaw.tif',1);
 ```
 
-**_ExampleReg.ome.tiff_** is the drift-corrected version of *ExampleRaw.tif* that can be used for demo:
+**_ExampleReg.ome.tiff_** is the drift-corrected version of *ExampleRaw.tif* that can be used for demo (N.B. tirfregister() will also create a registered image file called *ExampleRaw.ome.tiff*):
 
 ```
 [data, SK, ISOR, StatsPix, survData] = asmca('ExampleReg.ome.tiff', 5, 0.4, 0.4);
