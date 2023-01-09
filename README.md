@@ -1,5 +1,5 @@
 # Automated-Single-Molecule-Colocalization-Analysis
-Analysis of Single molecules binding to DNA fragments using data from TIRF microscopy- Biggins lab
+Analysis of single molecules binding to DNA fragments using data from TIRF microscopy- Biggins lab
 
 Automated-Single-Molecule-Colocalization-Analysis (ASMCA) repository contains the MATLAB (R2019b) codes used to generate the data related to TIRF microscopy experiments presented in Popchock *et al.* from the Biggins Lab. 
 
