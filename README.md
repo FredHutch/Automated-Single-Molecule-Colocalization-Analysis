@@ -1,7 +1,13 @@
 # Automated-Single-Molecule-Colocalization-Analysis
 Analysis of single molecules binding to DNA fragments using data from TIRF microscopy- Biggins lab
 
-Automated-Single-Molecule-Colocalization-Analysis (ASMCA) repository contains the MATLAB (R2019b) codes used to generate the data related to TIRF microscopy experiments presented in Popchock *et al.* from the Biggins Lab. 
+Automated-Single-Molecule-Colocalization-Analysis (ASMCA) repository contains the MATLAB (R2019b) codes used to generate the data related to TIRF microscopy experiments presented in Popchock *et al.* from the Biggins Lab:
+
+**Direct observation of coordinated assembly of individual native centromeric nucleosomes.**
+
+Popchock AR, Larson JD, Dubrulle J, Asbury CL, Biggins S. 
+
+EMBO J. 2023 Jul 20:e114534. doi: 10.15252/embj.2023114534. PMID: 37469281 
 
 The aim of this pipeline is to identify binding events between DNA fragments immobilized on coverslips incubated with a cellular extract containing fluorescently tagged proteins and quantify their duration using time-lapse TIRF microscopy.
 In short,  the image dataset is drift-corrected using either fast Fourier Transform cross-correlations or translation affine transformation depending on the severity of the drift. DNA spots are identified after binarizing the DNA signal using global background value as threshold, followed by size and time-persistency filtering. Mean values of z-normalized fluorescent markers intensities are measured at each DNA spot at each time frame, and local background is subtracted. Z-normalized traces are then binarized to ON/OFF pulses by applying a channel-specific, manually adjusted threshold value unique to all traces in a given image set. Pulses onsets, durations and overlaps between channels are then derived. Pulses in ON state at the beginning or the end of the recording are flagged. See codes and manuscipt for detail. Input data is a three-channel time-series generated from a Nikon TIRF microscope with settings and specifications described in the manuscript. This pipeline has not been tested on other datasets coming from different platforms.
